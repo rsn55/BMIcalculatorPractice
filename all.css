@@ -1,0 +1,39 @@
+h1{
+  text-align: center;
+}
+#mainForm {
+  margin-left: 40%;
+}
+.labelAndInput {
+  margin: 10px;
+}
+form p{
+  display: inline;
+}
+.invalidMessage {
+  display: none;
+  color: red;
+}
+
+body{
+  margin-top: 20%;
+  background-image: url("weedBackground.jpeg");
+}
+
+
+#returnBMI {
+  text-align: center;
+  margin-top: 5%;
+
+}
+
+.passed, p{
+  display: inline;
+}
+#iFrameDiv {
+
+  padding-top:3%;
+}
+#BMIpage {
+  margin-left: 27%;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <link rel="stylesheet" type="text/css" href="all.css" media="all" />
+    <script type="text/javascript" src="site.js"></script>
+
+</head>
+<body>
+  <h1>BMI Calculator</h1>
+  <form method="get" action="calc.html" id="mainForm" onsubmit="return validateForm()"
+   target="BMIpage" novalidate>
+    <div class="labelAndInput">
+      <label for="name">Name: </label>
+     <input id="name" name="name" required>
+     <p class="invalidMessage" id="invalidName">Please submit a valid name.</p>
+   </div>
+   <div class="labelAndInput">
+     <label for="height">Height (in.): </label>
+     <input id="height" name="height" required>
+      <p class="invalidMessage" id="invalidHeight">Please submit a valid height.</p>
+   </div>
+   <div class="labelAndInput">
+     <label for="weight">Weight (lb.): </label>
+     <input id="weight" name="weight" required>
+      <p class="invalidMessage" id="invalidWeight">Please submit a valid weight.</p>
+   </div>
+   <div class="labelAndInput">
+    <button id="submitButton" type="submit" value="submit">Submit</button>
+    <button type="button" onclick="resetForm()" value="clear">Clear</button>
+  </div>
+  </form>
+  <div id="iFramediv">
+  <iframe id="BMIpage" name="BMIpage" src="blankPage.html">
+  </iframe>
+  <iframe id="googlePage" name="googlePage" src="https://www.bing.com/search?q=bmi&qs=n&form=QBLH&sp=-1&pq=bmi&sc=0-0&sk=&cvid=37887D10BEE3481A96D888748E5F05BF">
+  </iframe>
+</div>
+</body>
+</html>
